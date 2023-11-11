@@ -1,0 +1,17 @@
+footer {
+    background-color: $footerColor;
+
+    a {
+        color: #72f072 !important;
+
+        &:hover {
+            color: #72cf72;
+            transform: scale(110%);
+            transition: all 0.5s;
+        }
+    }
+
+    p {
+        color: $white;
+    }
+}

@@ -47,31 +47,85 @@ const articulos = [
         precio: 7000,
         descripcion: "Remera hecha 100% de algodon con el logo de Ravenclaw",
     },
+    {
+        tipo: "decoración",
+        nombre: "Snitch Dorada",
+        precio: 2300,
+        descripcion: "Una snitch dorada de harry potter de 15cm de longitud, perfecta para decoración"
+    },
+    {
+        tipo: "varita",
+        nombre: "Varita de Saúco",
+        precio: 4500,
+        descripcion: "Varita de sauco, tambien llamada la varita mas poderosa del mundo, perteneció a Dumbledor, y es una de las 3 reliquias de la muerte"
+    },
+    {
+        tipo: "accesorio",
+        nombre: "Colgante de las reliquias de la muerte",
+        precio: 2500,
+        descripcion: "Un colgante con el simbolo de las reliquias de la muerte"
+    },
+    {
+        tipo: "accesorio",
+        nombre: "Pendientes de las reliquias de la muerte",
+        precio: 1500,
+        descripcion: "Dos pendientes con el simbolo de las reliquias de la muerte"
+    },
 ]
 
 
+function crearArticulo() {
+    this.tipo = prompt('Ingrese el tipo del producto:');
+    this.nombre = prompt('Ingrese el nombre del producto:');
+    const precioString = prompt('Ingrese el precio del producto:');
+    this.precio = parseFloat(precioString);
+    this.descripcion = prompt('Ingrese la descripción del producto:');
+    const nuevoArticulo = {
+        tipo,
+        nombre,
+        precio,
+        descripcion,
+    };
 
+    if (isNaN(this.precio)) {
+        console.log('Ingresar un precio numerico porfavor');
+        return;
+    } else {
+        articulos.push(nuevoArticulo);
+    }
 
-function Articulo() {;
-    this.tipo = prompt("Que tipo de articulo quiere publicar");
-    this.nombre = prompt("Que tipo de articulo quiere publicar");
-    this.precio = prompt("Que tipo de articulo quiere publicar");
-    this.descripcion = prompt("Que tipo de articulo quiere publicar");
 }
-function agregarArticulo(){
-    articulos.push()
+
+
+function verCatalogo() {
+    for (let i = 0; i < articulos.length; i += 1)
+        console.log(articulos[i])
 }
-agregarArticulo()
-for (let i=0;i<articulos.length;i+=1)
 
-console.log(articulos[i])
-// console.log(agregarArticulo)
+function filtrarProductos() {
+    const item = prompt("Ingrese que tipo de articulo desea")
 
-// let filtrarTazas = articulos.filter(articulo => articulo.tipo === "taza")
+    const articulosFiltrados = articulos.filter(articulo => articulo.tipo === item)
 
-// let filtrarPrendas = articulos.filter(articulo => articulo.tipo === "prenda")
+    console.log('Los productos que coinciden con su busqueda son:', articulosFiltrados);
+}
 
+function filtrarPrecio() {
+    const precioMaximo = parseFloat(prompt('Ingrese el precio máximo:'));
 
+    if (isNaN(precioMaximo)) {
+        console.log('Por favor, ingrese un número válido.');
+        return;
+    }
 
+    const preciosFiltrados = articulos.filter(producto => producto.precio <= precioMaximo);
+
+    console.log('Productos con precio igual o inferior a $' + precioMaximo + ':', preciosFiltrados);
+}
+
+// filtrarProductos()
+// crearArticulo();
+// filtrarPrecio()
+// verCatalogo()
 // console.log(filtrarTazas)
 // console.log(filtrarPrendas)

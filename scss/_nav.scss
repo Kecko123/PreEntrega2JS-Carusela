@@ -1,0 +1,22 @@
+.wellcome{
+    background-color: #582707;
+    color: #F5EAEA;
+    p{
+        white-space: nowrap;
+        width: fit-content;
+        overflow: hidden;
+        margin: 0;
+        animation: marquee 15s infinite linear;
+    }
+}
+@keyframes marquee {
+    from {transform: translateX(-100%);}
+    
+    to {transform: translateX(650%);}
+  }
+header{
+    .logo{
+        width: 6rem;
+    }
+    background-color: $headerBG;
+}

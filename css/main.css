@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@600&family=Open+Sans&family=Roboto:wght@300&family=Rubik&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.font-openSans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font-roboto, .font-robotoBold {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-daiBanna {
+  font-family: "Dai Banna SIL", sans-serif;
+}
+
+.font-rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.font-robotoBold {
+  font-weight: bold;
+}
+
+.wellcome {
+  background-color: #582707;
+  color: #F5EAEA;
+}
+.wellcome p {
+  white-space: nowrap;
+  width: fit-content;
+  overflow: hidden;
+  margin: 0;
+  animation: marquee 15s infinite linear;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(650%);
+  }
+}
+header {
+  background-color: #783506;
+}
+header .logo {
+  width: 6rem;
+}
+
+footer {
+  background-color: #241818;
+}
+footer a {
+  color: #72f072 !important;
+}
+footer a:hover {
+  color: #72cf72;
+  transform: scale(110%);
+  transition: all 0.5s;
+}
+footer p {
+  color: rgb(242, 242, 242);
+}
+
+/*# sourceMappingURL=main.css.map */
