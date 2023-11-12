@@ -1,3 +1,14 @@
+body {
+    background: $principalBG;
+}
+
+.videoTienda {
+    width: 100%;
+    box-shadow: 0px 0px 27px 19px rgba(0, 0, 0, 0.48);
+    -webkit-box-shadow: 0px 0px 27px 19px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 0px 27px 19px rgba(0, 0, 0, 0.48);
+}
+
 footer {
     background-color: $footerColor;
 

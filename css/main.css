@@ -28,28 +28,59 @@
 .wellcome {
   background-color: #582707;
   color: #F5EAEA;
+  overflow: hidden;
 }
 .wellcome p {
   white-space: nowrap;
   width: fit-content;
   overflow: hidden;
   margin: 0;
-  animation: marquee 15s infinite linear;
+  font-size: 1.25em;
+  animation: marquee 15s infinite ease-out;
 }
 
 @keyframes marquee {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-100vw);
   }
   to {
-    transform: translateX(650%);
+    transform: translateX(100vw);
   }
 }
 header {
   background-color: #783506;
 }
-header .logo {
-  width: 6rem;
+header .h1 {
+  font-size: 3em;
+}
+header .h1Logo {
+  width: 140px;
+}
+header .h1:hover {
+  transform: scale(110%);
+  transition: all 1s;
+}
+header .nav-link:hover {
+  transform: scale(110%);
+  transition: all 1s;
+}
+header .navbar-toggler {
+  border: none;
+  color: rgb(22, 22, 22);
+}
+header .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(88, 30, 17) 0%, rgb(120, 53, 6) 35%, rgb(120, 53, 6) 65%, rgb(88, 30, 17) 100%);
+}
+
+.videoTienda {
+  width: 100%;
+  box-shadow: 0px 0px 27px 19px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 0px 0px 27px 19px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 0px 27px 19px rgba(0, 0, 0, 0.48);
 }
 
 footer {
@@ -65,6 +96,29 @@ footer a:hover {
 }
 footer p {
   color: rgb(242, 242, 242);
+}
+
+@media (max-width: 768px) {
+  .wellcome p {
+    font-size: 1em;
+  }
+  .h1 {
+    font-size: 2em !important;
+  }
+  .h1Logo {
+    width: 100px !important;
+  }
+}
+@media (max-width: 375px) {
+  .wellcome p {
+    font-size: 0.8em;
+  }
+  .h1 {
+    font-size: 1.5em !important;
+  }
+  .h1Logo {
+    width: 80px !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
