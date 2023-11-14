@@ -26,3 +26,124 @@ footer {
         color: $white;
     }
 }
+
+.card {
+    &Ravenclaw {
+        background: $ravenclawBG;
+    }
+
+    &Slytherin {
+        background: $slytherinBG;
+    }
+
+    &Gryffindor {
+        background: $gryffindorBG;
+    }
+
+    &Hufflepuff {
+        background: $hufflepuffBG;
+    }
+
+    background: $commonBG;
+    border: 1px transparent solid;
+
+    &-text {
+        color: $white;
+    }
+
+    &-title {
+        color: $white;
+    }
+
+    box-shadow: 10px 8px 6px -1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 10px 8px 6px -1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 10px 8px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.btn {
+    &Color {
+        &Ravenclaw {
+            background: linear-gradient(to right, #3a7bd5 0%, #3a6073 51%, #3a7bd5 100%);
+            text-align: center;
+            text-transform: uppercase;
+            background-size: 200% auto;
+            color: $white !important;
+            width: 150px !important;
+
+            &:hover {
+                transition: 0.5s;
+                background-position: right center;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        &Slytherin {
+            background: linear-gradient(to right, #485563 0%, #29323c 51%, #485563 100%);
+            text-align: center;
+            text-transform: uppercase;
+            background-size: 200% auto;
+            color: $white !important;
+            width: 150px !important;
+
+
+            &:hover {
+                transition: 0.5s;
+                background-position: right center;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        &Gryffindor {
+            background: linear-gradient(to right, #D31027 0%, #EA384D 51%, #D31027 100%);
+            text-align: center;
+            text-transform: uppercase;
+            background-size: 200% auto;
+            color: $white !important;
+            width: 150px !important;
+
+
+            &:hover {
+                transition: 0.5s;
+                background-position: right center;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        &Hufflepuff {
+            background: linear-gradient(to right, #F7971E 0%, #FFD200 51%, #F7971E 100%);
+            text-align: center;
+            text-transform: uppercase;
+            background-size: 200% auto;
+            color: $white !important;
+            width: 150px !important;
+
+
+            &:hover {
+                transition: 0.5s;
+                background-position: right center;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+        text-align: center;
+        text-transform: uppercase;
+        background-size: 200% auto;
+        color: white !important;
+        width:150px !important;
+
+        &:hover {
+            transition: 0.5s;
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}

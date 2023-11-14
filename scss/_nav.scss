@@ -38,9 +38,11 @@ header {
     }
 
     .nav-link {
+        margin-left: 16px;
+
         &:hover {
             transform: scale(110%);
-            transition: all 1s;
+            transition: all 0.5s;
         }
     }
 
@@ -55,4 +57,12 @@ header {
 
     background-color: $headerBG;
 
+}
+
+.carrito {
+    padding: 14px !important;
+    color: $black !important;
+    background-color: $secondaryColor !important;
+    border: 1px transparent solid;
+    border-radius: 100px;
 }

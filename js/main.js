@@ -51,19 +51,19 @@ const articulos = [
         tipo: "decoración",
         nombre: "Snitch Dorada",
         precio: 2300,
-        descripcion: "Una snitch dorada de harry potter de 15cm de longitud, perfecta para decoración"
+        descripcion: "Una snitch dorada de harry potter de 10cm de longitud, perfecta para decoración"
     },
     {
         tipo: "varita",
         nombre: "Varita de Saúco",
-        precio: 4500,
+        precio: 6500,
         descripcion: "Varita de sauco, tambien llamada la varita mas poderosa del mundo, perteneció a Dumbledor, y es una de las 3 reliquias de la muerte"
     },
     {
         tipo: "accesorio",
         nombre: "Colgante de las reliquias de la muerte",
         precio: 2500,
-        descripcion: "Un colgante con el simbolo de las reliquias de la muerte"
+        descripcion: "Un collar con el simbolo de las reliquias de la muerte en él"
     },
     {
         tipo: "accesorio",

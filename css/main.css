@@ -60,9 +60,12 @@ header .h1:hover {
   transform: scale(110%);
   transition: all 1s;
 }
+header .nav-link {
+  margin-left: 16px;
+}
 header .nav-link:hover {
   transform: scale(110%);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 header .navbar-toggler {
   border: none;
@@ -70,6 +73,14 @@ header .navbar-toggler {
 }
 header .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.carrito {
+  padding: 14px !important;
+  color: rgb(22, 22, 22) !important;
+  background-color: #d75120 !important;
+  border: 1px transparent solid;
+  border-radius: 100px;
 }
 
 body {
@@ -96,6 +107,103 @@ footer a:hover {
 }
 footer p {
   color: rgb(242, 242, 242);
+}
+
+.card {
+  background: linear-gradient(to right, #a73737, #7a2828);
+  border: 1px transparent solid;
+  box-shadow: 10px 8px 6px -1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 8px 6px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 8px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.cardRavenclaw {
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+.cardSlytherin {
+  background: linear-gradient(109.6deg, rgb(61, 131, 97) 11.2%, rgb(28, 103, 88) 91.1%);
+}
+.cardGryffindor {
+  background: radial-gradient(circle farthest-corner at 17.1% 22.8%, rgb(226, 24, 24) 0%, rgb(160, 6, 6) 90%);
+}
+.cardHufflepuff {
+  background: radial-gradient(circle 957px at 8.7% 50.5%, rgb(246, 191, 13) 0%, rgb(249, 47, 47) 90%);
+}
+.card-text {
+  color: rgb(242, 242, 242);
+}
+.card-title {
+  color: rgb(242, 242, 242);
+}
+
+.btnColor {
+  background: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  color: white !important;
+  width: 150px !important;
+}
+.btnColorRavenclaw {
+  background: linear-gradient(to right, #3a7bd5 0%, #3a6073 51%, #3a7bd5 100%);
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  color: rgb(242, 242, 242) !important;
+  width: 150px !important;
+}
+.btnColorRavenclaw:hover {
+  transition: 0.5s;
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.btnColorSlytherin {
+  background: linear-gradient(to right, #485563 0%, #29323c 51%, #485563 100%);
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  color: rgb(242, 242, 242) !important;
+  width: 150px !important;
+}
+.btnColorSlytherin:hover {
+  transition: 0.5s;
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.btnColorGryffindor {
+  background: linear-gradient(to right, #D31027 0%, #EA384D 51%, #D31027 100%);
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  color: rgb(242, 242, 242) !important;
+  width: 150px !important;
+}
+.btnColorGryffindor:hover {
+  transition: 0.5s;
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.btnColorHufflepuff {
+  background: linear-gradient(to right, #F7971E 0%, #FFD200 51%, #F7971E 100%);
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  color: rgb(242, 242, 242) !important;
+  width: 150px !important;
+}
+.btnColorHufflepuff:hover {
+  transition: 0.5s;
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.btnColor:hover {
+  transition: 0.5s;
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

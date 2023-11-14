@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,9 +7,14 @@
 //----------------variables----------------
 
 //colors
-$principalBG: linear-gradient(90deg, rgba(88,30,17,1) 0%, rgba(120,53,6,1) 35%, rgba(120,53,6,1) 65%, rgba(88,30,17,1) 100%);
+$principalBG: linear-gradient(90deg, rgba(88, 30, 17, 1) 0%, rgba(120, 53, 6, 1) 35%, rgba(120, 53, 6, 1) 65%, rgba(88, 30, 17, 1) 100%);
 $headerBG: #783506;
-$secondaryColor: #972D07;
+$slytherinBG: linear-gradient(109.6deg, rgba(61, 131, 97, 1) 11.2%, rgba(28, 103, 88, 1) 91.1%);
+$hufflepuffBG: radial-gradient(circle 957px at 8.7% 50.5%, rgba(246, 191, 13, 1) 0%, rgba(249, 47, 47, 1) 90%);
+$gryffindorBG: radial-gradient(circle farthest-corner at 17.1% 22.8%, rgba(226, 24, 24, 1) 0%, rgba(160, 6, 6, 1) 90%);
+$ravenclawBG: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+$commonBG: linear-gradient(to right, #a73737, #7a2828);
+$secondaryColor: #d75120;
 $footerColor: #241818;
 $black: rgb(22, 22, 22);
 $white: rgb(242, 242, 242);
