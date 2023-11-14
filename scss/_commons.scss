@@ -28,6 +28,10 @@ footer {
 }
 
 .card {
+    &Margins {
+        padding: 0 !important;
+    }
+
     &Ravenclaw {
         background: $ravenclawBG;
     }
@@ -87,7 +91,7 @@ footer {
             text-transform: uppercase;
             background-size: 200% auto;
             color: $white !important;
-            width: 150px !important;
+
 
 
             &:hover {

@@ -81,6 +81,7 @@ header .navbar-toggler:focus {
   background-color: #d75120 !important;
   border: 1px transparent solid;
   border-radius: 100px;
+  width: fit-content;
 }
 
 body {
@@ -115,6 +116,9 @@ footer p {
   box-shadow: 10px 8px 6px -1px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 10px 8px 6px -1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 10px 8px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.cardMargins {
+  padding: 0 !important;
 }
 .cardRavenclaw {
   background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
@@ -163,7 +167,6 @@ footer p {
   text-transform: uppercase;
   background-size: 200% auto;
   color: rgb(242, 242, 242) !important;
-  width: 150px !important;
 }
 .btnColorSlytherin:hover {
   transition: 0.5s;
@@ -206,7 +209,20 @@ footer p {
   text-decoration: none;
 }
 
+@media (max-width: 1440px) {
+  .card {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .card {
+    margin-left: 1.5rem;
+  }
+}
 @media (max-width: 768px) {
+  .card {
+    margin-left: 2rem;
+  }
   .wellcome p {
     font-size: 1em;
   }
@@ -217,7 +233,15 @@ footer p {
     width: 100px !important;
   }
 }
+@media (max-width: 425px) {
+  .card {
+    margin-left: 3rem;
+  }
+}
 @media (max-width: 375px) {
+  .card {
+    margin-left: 2rem;
+  }
   .wellcome p {
     font-size: 0.8em;
   }
@@ -226,6 +250,11 @@ footer p {
   }
   .h1Logo {
     width: 80px !important;
+  }
+}
+@media (max-width: 320px) {
+  .card {
+    margin-left: 0;
   }
 }
 
